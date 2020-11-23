@@ -10,8 +10,8 @@ int main() {
   int a, b, sum, i;
   for(i=0;i<234;i++){
     Numbers >> a >> b;
-    cout<<a<<b;
+    cout<< a << ' ' << b << '\n';
     sum = a + b;
-    SumNum << sum;
+    SumNum << sum << '\n';
   }
 }
