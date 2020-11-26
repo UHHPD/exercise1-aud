@@ -7,7 +7,7 @@ int main() {
   ifstream SumNum("datensumme.txt");
   ifstream SumNum2("datensumme.txt");
   cout<< "how much total numbers are?";
-  cin>>N;
+  N=234;
   double a,mean,i,sum=0;
   for(i=0;i<N;i++)
   {SumNum>>a;
