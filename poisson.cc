@@ -11,18 +11,14 @@ int main() {
   ifstream ifile("datensumme.txt");
   ofstream gin("hist.txt");
   ofstream gout("histpoi.txt");
-
   vector<int> frequency(10, 0);
-
   int n,m;
   while(ifile >> n) {
     ++frequency[n];
   }
-
   for(int i = 0; i < 10; ++i) {
     gin<<i<<" "<<frequency[i]<<endl;
     gout<<i<<" "<<frequency[i]<<" "<<poisson(3.11538,i)*234<<endl;
   }
-
   return 0;
 }
